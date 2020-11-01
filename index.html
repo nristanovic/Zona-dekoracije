@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Cvetni aranžmani, bidermajeri, ukrasi za stolove, automobile i prostor. Realizacija dekoracije po Vašim željama, u klasičnom, modernom, ekstravagantnom ili tradicionalnom stilu. Naše iskustvo će Vam pomoći da proslavu provedete bezbrižni i srećni. Mi ćemo biti Vaša sigurna Zona." />
+    <meta name="keywords" content="zona, dekoracije, cvetni, aranzmani, proslave, ukrasi" />
+    <meta property="og:title" content="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.zonadekoracije.com" />
+    <meta property="og:image" content="https://www.zonadekoracije.com/assets/img/main/logo1.png" />
+    <meta property="og:description" content="Cvetni aranžmani, bidermajeri, ukrasi za stolove, automobile i prostor. Realizacija dekoracije po Vašim željama, u klasičnom, modernom, ekstravagantnom ili tradicionalnom stilu. Naše iskustvo će Vam pomoći da proslavu provedete bezbrižni i srećni. Mi ćemo biti Vaša sigurna Zona." />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#fff" />
+    <title>Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/img/favicon/manifest.json" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      h1, h2, h3 {
+        font-weight: 400;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      html {
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+
+      body {
+        background-color: #fff;
+        color: #fff;
+        font-family: 'Muli', sans-serif;
+        font-size: 20px;
+        line-height: 1.4;
+      }
+
+      .background {
+        height: 1100px;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+      }
+
+      .background-img {
+        opacity: 0;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        transition: opacity .5s linear;
+        -moz-transition: opacity .5s linear;
+        -ms-transition: opacity .5s linear;
+        -o-transition: opacity .5s linear;
+        -webkit-transition: opacity .5s linear;
+      }
+
+      .current {
+        opacity: 1;
+      }
+
+      #wrapper {
+        margin: 0 auto;
+        max-width: 1600px;
+        padding: 1em 2em;
+      }
+
+      .imgbg {
+        background: blue;
+        height: 1000px;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+      }
+
+      #top {
+        padding: .5em 0;
+      }
+
+      #top a {
+        display: block;
+        transition: opacity .2s ease-out;
+        -moz-transition: opacity .2s ease-out;
+        -o-transition: opacity .2s ease-out;
+        -webkit-transition: opacity .2s ease-out;
+      }
+
+      #logo {
+        float: left;
+      }
+
+      #logo > a > img {
+        float: left;
+        height: 33px;
+      }
+
+      #top > ul {
+        float: right;
+      }
+
+      #top > ul > li {
+        float: left;
+        margin-left: 1.2em;
+      }
+
+      #top > ul > li > a {
+        float: left;
+        font-size: 1.2em;
+      }
+
+      #navigation {
+        padding: .5em 0;
+        text-align: center;
+      }
+
+      #navigation > li {
+        display: inline-block;
+        overflow: hidden;
+      }
+
+      #navigation > li > a {
+        margin-right: 1em;
+        position: relative;
+        transition: color .3s ease-out;
+        -moz-transition: color .3s ease-out;
+        -ms-transition: color .3s ease-out;
+        -o-transition: color .3s ease-out;
+        -webkit-transition: color .3s ease-out;
+      }
+
+      #header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 600px;
+      }
+
+      #header > h1 {
+        font-size: 2.5em;
+        width: 67%;
+      }
+
+      #header > h2 {
+        font-size: 1.5em;
+        padding: 1em 0;
+      }
+
+      .hr {
+        background-color: #fff;
+        height: 1px;
+        width: 2em;
+      }
+
+      #header > a {
+        border: 1px solid #fff;
+        margin: 2em 0;
+        padding: .5em 1em;
+        text-align: center;
+        width: 80px;
+        transition: opacity .2s ease-out;
+        -moz-transition: opacity .2s ease-out;
+        -o-transition: opacity .2s ease-out;
+        -webkit-transition: opacity .2s ease-out;
+      }
+
+      #arrow-down {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top: -2em;
+        width: 50px;
+        text-align: center;
+      }
+
+      .fa-angle-down {
+        font-size: 1.5em;
+        transition: transform .2s ease-out;
+        -moz-transition: transform .2s ease-out;
+        -o-transition: transform .2s ease-out;
+        -webkit-transition: transform .2s ease-out;
+      }
+
+      #gallery {
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba(49, 49, 49, .33), 0 10px 20px rgba(49, 49, 49, .33);
+        overflow-x: hidden;
+        position: relative;
+        top: 59px;
+      }
+
+      .gallery-img {
+        display: flex;
+        background: #fff;
+        flex: 25%;
+        height: 280px;
+        overflow: hidden;
+      }
+
+      @media screen and (max-width: 1600px) {
+
+        .background {
+          overflow: hidden;
+        }
+
+        .background-img {
+          width: 1600px;
+        }
+
+      }
+
+      @media screen and (max-width: 768px) {
+
+        .background {
+          height: 1176px;
+        }
+
+        body {
+          font-size: 16px;
+        }
+
+        #header > h1 {
+          width: 100%;
+          font-size: 2em;
+        }
+
+      }
+
+      @media screen and (min-width: 1900px) {
+
+        body {
+          font-size: 24px;
+        }
+
+        #gallery, #contact, footer {
+          top: 28px;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <img id="bg-main" class="background-img current" src="assets/img/background/1.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe" />
+      <img id="bg-gallery" class="background-img" src="assets/img/background/2.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe" />
+      <img id="bg-contact" class="background-img" src="assets/img/background/3.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe" />
+    </div>
+    <i class="fas fa-angle-up scroll-top"></i>
+    <div id="wrapper">
+      <main id="main">
+        <nav id="top">
+          <div id="logo">
+            <a href="https://wwww.zonadekoracije.com">
+              <img src="assets/img/main/logo.png" alt="Zona" />
+            </a>
+          </div>
+          <ul id="social">
+            <li><a href="javascript:void(0)"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+          <div class="cleaner"></div>
+        </nav>
+        <ul id="navigation">
+          <li><a id="nav-main" href="#main">Početna</a></li>
+          <li><a id="nav-gallery" href="#gallery">Galerija</a></li>
+          <li><a id="nav-contact" href="#contact-form">Kontakt</a></li>
+        </ul>
+        <section id="header">
+          <h1>Najpovoljnije i najkvalitetnije dekoracije i cvetni aranžmani.</h1>
+          <h2>Samo za Vas.</h2>
+          <div class="hr"></div>
+          <a id="order" href="#contact-form">Poručite</a>
+        </section>
+        <a id="arrow-down" href="#gallery"><i class="fas fa-angle-down"></i></a>
+      </main>
+      <article id="gallery" data-featherlight-gallery data-featherlight-filter="a">
+        <div class="gallery-row">
+          <figure class="gallery-img hideme">
+            <a class="gallery" href="assets/img/gallery/1.jpg">
+              <img src="assets/img/gallery/1.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe - Galerija" />
+            </a>
+          </figure>
+          <figure class="gallery-img hideme">
+            <a class="gallery" href="assets/img/gallery/2.jpg">
+              <img src="assets/img/gallery/2.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe - Galerija" />
+            </a>
+          </figure>
+          <figure class="gallery-img hideme">
+            <a class="gallery" href="assets/img/gallery/3.jpg">
+              <img src="assets/img/gallery/3.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe - Galerija" />
+            </a>
+          </figure>
+          <figure class="gallery-img hideme">
+            <a class="gallery" href="assets/img/gallery/4.jpg">
+              <img src="assets/img/gallery/4.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe - Galerija" />
+            </a>
+          </figure>
+        </div>
+        <div class="gallery-row">
+          <figure class="gallery-img hideme">
+            <a class="gallery" href="assets/img/gallery/5.jpg">
+              <img src="assets/img/gallery/5.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe - Galerija" />
+            </a>
+          </figure>
+          <figure class="gallery-img hideme">
+            <a class="gallery" href="assets/img/gallery/6.jpg">
+              <img src="assets/img/gallery/6.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe - Galerija" />
+            </a>
+          </figure>
+          <figure class="gallery-img hideme">
+            <a class="gallery" href="assets/img/gallery/7.jpg">
+              <img src="assets/img/gallery/7.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe - Galerija" />
+            </a>
+          </figure>
+          <figure class="gallery-img hideme">
+            <a class="gallery" href="assets/img/gallery/8.jpg">
+              <img src="assets/img/gallery/8.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe - Galerija" />
+            </a>
+          </figure>
+        </div>
+        <div class="gallery-row">
+          <figure class="gallery-img hideme">
+            <a class="gallery" href="assets/img/gallery/9.jpg">
+              <img src="assets/img/gallery/9.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe - Galerija" />
+            </a>
+          </figure>
+          <figure class="gallery-img hideme">
+            <a class="gallery" href="assets/img/gallery/10.jpg">
+              <img src="assets/img/gallery/10.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe - Galerija" />
+            </a>
+          </figure>
+          <figure class="gallery-img hideme">
+            <a class="gallery" href="assets/img/gallery/11.jpg">
+              <img src="assets/img/gallery/11.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe - Galerija" />
+            </a>
+          </figure>
+          <figure class="gallery-img hideme">
+            <a class="gallery" href="assets/img/gallery/12.jpg">
+              <img src="assets/img/gallery/12.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe - Galerija" />
+            </a>
+          </figure>
+        </div>
+        <div class="gallery-row">
+          <figure class="gallery-img hideme">
+            <a class="gallery" href="assets/img/gallery/13.jpg">
+              <img src="assets/img/gallery/13.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe - Galerija" />
+            </a>
+          </figure>
+          <figure class="gallery-img hideme">
+            <a class="gallery" href="assets/img/gallery/14.jpg">
+                <img src="assets/img/gallery/14.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe - Galerija" />
+              </a>
+          </figure>
+          <figure class="gallery-img hideme">
+            <a class="gallery" href="assets/img/gallery/15.jpg">
+              <img src="assets/img/gallery/15.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe - Galerija" />
+            </a>
+          </figure>
+          <figure class="gallery-img hideme">
+            <a class="gallery" href="assets/img/gallery/16.jpg">
+              <img src="assets/img/gallery/16.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe - Galerija" />
+            </a>
+          </figure>
+        </div>
+        <div class="gallery-row">
+          <figure class="gallery-img hideme">
+            <a class="gallery" href="assets/img/gallery/17.jpg">
+              <img src="assets/img/gallery/17.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe - Galerija" />
+            </a>
+          </figure>
+          <figure class="gallery-img hideme">
+            <a class="gallery" href="assets/img/gallery/18.jpg">
+              <img src="assets/img/gallery/18.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe - Galerija" />
+            </a>
+          </figure>
+          <figure class="gallery-img hideme">
+            <a class="gallery" href="assets/img/gallery/19.jpg">
+              <img src="assets/img/gallery/19.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe - Galerija" />
+            </a>
+          </figure>
+          <figure class="gallery-img hideme">
+            <a class="gallery" href="assets/img/gallery/20.jpg">
+              <img src="assets/img/gallery/20.jpg" alt="Zona | Dekoracije i cvetni aranžmani za sve Vaše potrebe - Galerija" />
+            </a>
+          </figure>
+        </div>
+      </article>
+      <article id="contact">
+        <section class="contact-col pr-1 hideme">
+          <h3>Naš rad</h3>
+          <p>Cvetni aranžmani, bidermajeri, ukrasi za stolove, automobile i prostor.
+          Realizacija dekoracije po Vašim željama, <em>u klasičnom, modernom, ekstravagantnom ili tradicionalnom stilu</em>.
+          Naše iskustvo će Vam pomoći da proslavu provedete bezbrižni i srećni.
+          Mi ćemo biti <strong>Vaša sigurna Zona</strong>.</p>
+          <h3>Informacije i porudžbine</h3>
+          <ul id="address">
+            <li><i class="fas fa-location-arrow"></i> <a href="https://goo.gl/maps/p6AZ9Pvoff12">Beograd, Srbija</a></li>
+            <li><i class="fas fa-mobile"></i> <a href="tel:+381646690722">00 381 64 669 0722</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info@zonadekoracije.com">info@zonadekoracije.com</a></li>
+            <li><i class="fas fa-link"></i> <a href="https://zonadekoracije.com">www.zonadekoracije.com</a></li>
+          </ul>
+        </section>
+        <section class="contact-col pl-1 pt-1 hideme">
+          <h3>Kontakt</h3>
+          <p>Ne ustručavajte se da nam postavite bilo kakvo pitanje, a takođe možete i poručiti preko sledećeg formulara.</p>
+          <form id="contact-form" action="mailer.php" method="post">
+            <label id="labName" for="name">Ime</label>
+            <input id="name" type="text" name="name" />
+            <label id="labEmail" for="email">Email</label>
+            <input id="email" type="text" name="email" />
+            <label id="labMsg" for="message">Poruka</label>
+            <textarea id="message" name="message" rows="8"></textarea>
+            <input id="submit" type="button" name="submit" value="Pošalji" />
+            <span id="info"></span>
+          </form>
+        </section>
+      </article>
+      <footer class="hideme">
+        <span>Copyright &copy; 2018 <span><a href="https://www.zonadekoracije.com">Zona</a></span>. Sva prava zadržana.</span>
+        <span>Made with &#10084; by <span><a href="https://www.r1stv.com">Nikola Ristanovic</a></span>.</span>
+      </footer>
+    </div>
+    <noscript id="deferred-styles">
+      <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet" />
+      <link href="assets/css/lib/fa/all.css" rel="stylesheet" />
+	    <link href="assets/css/lib/featherlight.css" rel="stylesheet" />
+      <link href="assets/css/lib/featherlight.gallery.css" rel="stylesheet" />
+      <link href="assets/css/style.css" rel="stylesheet" />
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+    <script>
+    [
+      'assets/js/lib/jquery-3.3.1.min.js',
+      'assets/js/lib/featherlight.js',
+      'assets/js/lib/featherlight.gallery.js',
+      'assets/js/main.js'
+    ].forEach(function(src) {
+      var script = document.createElement('script');
+      script.src = src;
+      script.async = false;
+      document.head.appendChild(script);
+    });
+    </script>
+  </body>
+</html>
